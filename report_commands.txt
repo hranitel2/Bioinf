@@ -1,0 +1,47 @@
+    4  git clone https://github.com/Weakne55/Bioinformatics305/tree/master#
+    6  git clone https://github.com/Weakne55/Bioinformatics305.git
+   10  git remote remove origin
+   24  git init
+   26  git config --global init.defaultBranch main
+   27  git config --global user.name hranitel
+   28  git config --global user.email kolyan.veseliy@gmail.com
+   29  git status
+   30  git clone https://github.com/Weakne55/Bioinformatics305.git
+   31  git add Bioinformatics305/
+   33  git remote remove origin
+   34  git remote add origin https://github.com/hranitel2/Bioinf.git
+   35  git status
+   36  git remote -v
+   37  git branch -M main
+   38  git branch
+   39  git commit -m 'Zero commit'
+   44  git commit -m 'Cleanup temp files'
+   45  git commit -am 'Cleanup temp files'
+   50  git checkout -b investigation
+   51  git add infected_reads.txt
+   52  git commit -m "Reads with TGCA"
+   55  git add mini_run.fastq
+   56  git commit -m "Add mini_run.fastq"
+   60  git status
+   61  git restore experiment.log
+   63  echo "git restore experiment.log" > command.txt
+   64  git checkout main
+   65  git add command.txt
+   66  git commit -m "Add restore command"
+   70  git add sort.txt
+   71  git commit -m "Add sort.txt"
+   72  git merge investigation
+   73  git log --oneline --graph --all
+   77  git add genes_fixed.csv
+   78  git commit -m "Add genes_fixed.csv"
+   84  git checkout -b cleaning
+   85  git add diskusage.file
+   86  git commit -m "Add disk usage report"
+   88  git add example.txt
+   89  git commit -m "Add something"
+   90  git log -1 --format=%H
+   92  git add forgotten.txt
+   93  git commit --amend --no-edit
+   94  git log -1 --format=%H
+   96  git add amend.txt && git commit -m "Add amend.txt"
+   97  history | grep "git " > report_commands.txt

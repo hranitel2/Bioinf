@@ -1,0 +1,7 @@
+Запуск 1:
+$ ./file_manager.sh
+File not found, creating...
+
+Запуск 2:
+$ ./file_manager.sh
+File exists, removing...
